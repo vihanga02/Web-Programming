@@ -1,0 +1,13 @@
+{% extends "users/layout.html" %}
+
+{% block body %}
+    {% if messege %}
+        <div>{{ messege }}  </div>
+
+    {% if messege !'login' %}" method="post">
+        {% csf_token %}
+        <input type="text" name="username" placeholder="Username">
+        <input type="password" name="password" placeholder="{Password}">
+        <input type="submit" value="">
+    </form>
+{% endblock %}

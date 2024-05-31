@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Survey Form</title>
+        <link rel="stylesheet" href="survey.css">
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <h1 id="title">Survey Form</h1>
+        <p id="description">Fill this survey form to help us to improve our service quality.</p>
+        <form id="survey-form">
+            <div class="form-group">
+                <label for="name" id="name-label">Name</label>
+                <input id="name" type="text" placeholder="enter your name" class="placeholders move-right" required>
+            </div>
+            <div class="form-group">
+                <label for="email" id="email-label">Email</label>
+                <input id="email" type="email" placeholder="enter your email" class="placeholders move-right" required>
+            </div>
+            <div class="form-group">
+                <label for="number" id="number-label">Number</label>
+                <input id="number" type="number" min="0" max="10000000000" placeholder="enter your number" class="placeholders">
+            </div>
+            <div class="form-group">
+                <label for="dropdown">Which option describe current role?</label>
+                <select id="dropdown">
+                    <option value="" disabled selected>Select your role</option>
+                    <option value="student">Student</option>
+                    <option value="job">Full-time job</option>
+                    <option value="learner">Full-time learner</option>
+                    <option value="preferNo">Prefer not to say</option>
+                    <option value="other">Other</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <fieldset>
+                    <legend>
+                        <label>What do you like most about our service?</label>
+                    </legend>
+                    <input type="radio" id="definitely" name="recommend" value="definitely" checked required>
+                    <label for="definitely">Definitely</label>
+                    <input type="radio" id="maybe" name="recommend" value="maybe" required>
+                    <label for="maybe">Maybe</label>
+                    <input type="radio" id="notsure" name="recommend" value="notsure" required>
+                    <label for="notsure">Not sure</label>
+                </fieldset>
+            </div>
+            <div class="form-group">
+                <fieldset>
+                    <legend>
+                        <label>What do you like most about our service? (Check all that apply)</label>
+                    </legend>
+                    <input type="checkbox" id="quality" value="quality">
+                    <label for="quality">Quality</label>
+                    <input type="checkbox" id="speed" value="speed">
+                    <label for="speed">Speed</label>
+                    <input type="checkbox" id="price" value="price">
+                    <label for="price">Price</label>
+                    <input type="checkbox" id="support" value="support">
+                    <label for="support">Support</label>
+                </fieldset>
+            </div>
+            <div class="form-group">
+                <fieldset>
+                    <legend><label for="comments">Any comments or suggestions?</label></legend>
+                    <textarea name="comments" id="comments" cols="50" rows="1" placeholder="Enter your comments or suggetions."></textarea>
+                </fieldset>
+                
+                
+            </div>
+            <div class="form-group button">
+                <button type="submit" id="submit">Submit</button>
+            </div>
+        </form>
+        <footer>
+            <p>
+                NO COPPYRIGHTS!
+            </p>
+        </footer>
+    </body>
+</html>

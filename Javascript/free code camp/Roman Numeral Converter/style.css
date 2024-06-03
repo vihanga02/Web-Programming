@@ -1,0 +1,103 @@
+main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+body{
+    background-color: rgb(9, 9, 34);
+}
+
+img{
+    height: 8rem;
+    width: 14rem;
+    clip-path: inset(35% 0% 35% 0%);
+    z-index: -1;
+}
+
+.header1{
+    text-align: center;
+    width: 29rem;
+    color: aliceblue;
+    font-size: x-large;
+    font-family: 'Castoro Titling', cursive;
+}
+
+.header1 h1{
+    margin: 0px
+}
+
+section div{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    position: relative;
+    width: 25rem;
+    height: 11rem;
+    top: 1rem;
+    left: 1rem;
+    padding: 1rem;
+    color:aliceblue;
+    background-color: rgba(60, 59, 100, 0.804);
+    font-size: x-large;
+    font-weight: bold;
+}
+
+section div p {
+    margin: 0rem 0rem 1rem 0rem;
+}
+
+section div input{
+    width: 22rem;
+    height: 2rem;
+    margin: 1rem;
+    padding: 0.5rem;
+    background-color: rgba(17, 17, 33, 0.804);
+    color: white;
+    font-size: large;
+    font-weight: bold;
+    text-align: center;
+    border-width: 0rem;
+}
+
+section div button{
+    width: 23rem;
+    height: 2.2rem;
+    margin: -0.1rem 10rem 1rem 1rem;
+    padding: 0.5rem;
+    background-color: rgba(226, 162, 13, 0.804);
+    color: white;
+    font-size: large;
+    font-weight: bold;
+    text-align: center;
+    border-width: 0rem;
+}
+
+section div button:hover{
+    background-color: rgba(115, 216, 52, 0.904);
+}
+
+#output{
+    position: relative;
+    top: 2.4rem;
+    left: 1rem;
+    width: 27rem;
+    height: 4.5rem;
+    background-color: rgba(60, 59, 100, 0.804);
+    text-align: center;
+    font-size: 2.1rem;
+    margin: 0rem;
+    color: white;
+}
+
+/* #output-div p{
+    margin: 0rem;
+    margin-top: 0.9rem;
+    color:azure;
+} */
+
+.error{
+    background-color: red;
+    color: white;
+}

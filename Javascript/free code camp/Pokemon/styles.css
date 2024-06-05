@@ -1,0 +1,264 @@
+body{
+    background-color: rgb(9, 13, 49);
+    color: white;
+    margin-top: 3%;
+    margin-bottom: 3%;
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+img{
+    height: 15%;
+    width: 30%;
+}
+
+h1{
+    font-family: 'Roboto', sans-serif;
+    margin-top: 4%;
+    font-size: 2.5em;
+    color: rgba(255, 255, 255, 0.836)
+}
+
+.container{
+    background-color: rgba(31, 30, 30, 0.842);
+    height: 45rem;
+    width: 45%;
+    box-shadow: 10px 10px 1px 0px rgba(63, 61, 61, 0.842);
+    border-radius: 5%;
+    padding: 2%;
+}
+
+form{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    position: relative;
+    left: 15%;
+    width: 70%;
+    height: 12%;
+    column-gap: 6%;
+    row-gap: 1rem;
+}
+
+form label{
+    font-weight: 400;
+    position: relative;
+    left: 15%;
+}
+
+form input{
+    height: 50%;
+    width: 70%;
+    background-color: rgba(82, 81, 81, 0.959);
+    border: 0.05rem solid white;
+}
+
+form button{
+    width: 22%;
+    border-top-left-radius: 0.8rem;
+    border-top-right-radius: 0.8rem;
+    border-bottom-left-radius: 0.8rem;
+    border-bottom-right-radius: 0.8rem;
+    border-width: 0rem;
+    background-color: rgb(102, 26, 137);
+    color: aliceblue;
+    font-size: 1rem;
+}
+
+.output{
+    display: flex;
+    flex-direction: column;
+    height: 82%;
+    width: 100%;
+    padding-top: 7%;
+}
+
+.top-container{
+    height: 50%;
+}
+
+.name-and-id{
+    padding-left: 5%;
+    padding-bottom: 1%;
+    text-transform: capitalize;
+}
+
+.size{
+    padding-left: 5%;
+    font-style: normal;
+    font-weight: lighter;
+    font-size: small;
+}
+
+.height{
+  padding-left : 1%;
+}
+
+.types{
+    position: relative;
+    top: 8%;
+    left: 5%;
+    min-height: 10%;
+    max-width: 90%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: start;
+    gap: 1%;
+}
+
+.type {
+  width: 66px;
+  padding: 5px;
+  font-size: 0.7rem;
+  text-align: center;
+  border-radius: 5px;
+  padding-top: 2.5%;
+  text-transform: uppercase;
+}
+
+
+.normal {
+  background-color: #b7b7aa;
+}
+
+.fire {
+  background-color: #ff6f52;
+}
+
+.water {
+  background-color: #42a1ff;
+}
+
+.electric {
+  background-color: #fecc33;
+}
+
+.grass {
+  background-color: #78cc55;
+}
+
+.ice {
+  background-color: #66ccfe;
+}
+
+.fighting {
+  background-color: #d3887e;
+}
+
+.poison {
+  background-color: #c68bb7;
+}
+
+.ground {
+  background-color: #dfba52;
+}
+
+.flying {
+  background-color: #8899ff;
+}
+
+.psychic {
+  background-color: #ff66a3;
+}
+
+.bug {
+  background-color: #aabb23;
+}
+
+.rock {
+  background-color: #baaa66;
+}
+
+.ghost {
+  background-color: #9995d0;
+}
+
+.dragon {
+  background-color: #9e93f1;
+}
+
+.dark {
+  background-color: #b59682;
+}
+
+.steel {
+  background-color: #abaabb;
+}
+
+.fairy {
+  background-color: #ed99ed;
+}
+  
+
+.sprite-container {
+    display: flex;
+    justify-content: center;
+    height: 60%;
+}
+  
+.sprite {
+    width: 70%;
+    height: 100%;
+    image-rendering: pixelated;
+}
+  
+
+.bottom-container{
+    height: 50%;
+}
+
+table{
+    width: 100%;
+    height: 100%;
+    border-collapse:separate;
+}
+
+table thead{
+    height: 15%;
+    background-color:  rgb(85, 12, 119);
+}
+
+table tbody{
+    background-color:  rgb(102, 26, 137);
+}
+
+table tbody td{
+    text-align: center;
+    width: 60%;
+}
+
+@media (max-width: 580px){
+  h1{
+    font-size: 1.5rem;
+  }
+
+  .container{
+    width: 80%;
+  }
+
+  form{
+    row-gap: 0.3rem;
+  }
+
+  form label{
+    left: 1%;
+    font-weight: 100;
+    font-size: 1rem;
+  }
+
+  form input{
+    width: 70%;
+    height: 2rem;
+  }
+
+  form button{
+    height: 2rem;
+    width: 20%;
+    font-size: 0.5rem;
+  }
+}
